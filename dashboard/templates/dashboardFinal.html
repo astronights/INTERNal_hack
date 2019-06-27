@@ -1,0 +1,22 @@
+<html>
+<head>
+    INTERNal Hackathon
+</head>
+<body>
+<div>
+    <form class="formLoginForm" action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+    <div>
+        <h3>Current Query Details</h3>
+        <p>
+            Company Name: <br>
+            Start Date: <br>
+            End Date: <br>
+        </p>
+    </div>
+</body>
+</html>
