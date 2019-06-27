@@ -4,7 +4,6 @@ from django.db import models
 
 class Company(models.Model):
     name = models.CharField(max_length=200, default='')
-    csvpath = models.CharField(max_length = 2200, unique = True)
     
 class StockPrice(models.Model):
     company_name = models.OneToOneField(Company, on_delete=models.CASCADE)
